@@ -1,116 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<!DOCTYPE html>
-<html  xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta id="viewport" name="viewport" content="width=320,maximum-scale=1.3,user-scalable=0" /> 
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="Content-Type" content="text/html, charset=utf-8" /> 
-    <meta http-equiv="content-language" content="zh" /> 
-    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" /> 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A 页面</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" href="/favicon.ico">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
+    <meta http-equiv="content-language" content="zh" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <title>人民日报</title>
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <!-- <link href="css/loading.css" type="text/css" rel="stylesheet" /> -->
+</head>
 
-    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-    <style type="text/css">
-        body{
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-        }
-        .bar{
-            background: #fff;
-        }
-        .content{
-            background: #fff;
-            width: 100%;
-            overflow-x: hidden;
-            padding-bottom: 1rem;
-        }
-        .content h1{
-            font-size: 9rem;
-            text-align: center;
-        }
-		
-		
-    </style>
-  </head>
-  <body>
-    <header class="bar bar-nav">
-        <h1 class="title">A 页面</h1>
-    </header>
-    <div class="content">
-        <a id="btnlink2" href="http://www.baidu.com">我是按钮2</a>
-        <p>
-                    <a id="btnOpenApp" href="龙头新闻隐私政策20201111.html">同目录网页</a>
-
-        </p>
-        <button onclick="whatBrowser()">UA TEST</button>
-        <!-- <h1>A</h1> -->
+<body>
+    <div class="rootcontent">
+        <div id="content" class="content">
+            <div class="head" id="htmlHeader">
+            </div>
+            <div class="image" id="htmlImage"></div>
+            <div class="detail" id="htmlDetail">
+            </div>
+        </div>
+        <div id="readlay">
+            <img class="playBtn" src="css/img/pic_audio_normal.png" />
+            <img class="stopBtn" src="css/img/pic_audio_stop.png" hidden="hidden" />
+        </div>
+        <div id="empty">
+        </div>
+        <div id="loading">
+                <!-- <img class="emptyImg" src="css/img/pic_detail_default.png" /> -->
+                <img id="loadingImg" src="css/img/pic_loading.gif">
+        </div>
     </div>
+    <!-- 模板 header -->
+    <script id="tmpHeader" type="text/html">
+        <h2 class="sho_title">{{#introTitle}}</h2>
+        <h1 class="title">{{#title}}</h1>
+        <h2 class="sub_title">{{#subTitle}}</h2>
+        <div class="info clearfix">
+            <span class="copyfrom">{{#copyfrom}}</span>
+            <span class="authors" hidden="hidden">{{#authors}}</span>
+            <span class="time">{{newsDatetime}} </span>
+        </div>
+    </script>
+    <!-- 模板图片 -->
+    <script id="tmpImg" type="text/html">
+        <img src="{{imgUrl}}">
+        <p class ="imgSummary">{{#summary}}</p>
+    </script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
 
-
-	     <!--<script type="text/javascript" src="//f.moblink.mob.com/3.0.1/moblink.js?appkey=2862712495f4a"></script>-->
-		 
-		 <!--  AD:7D:09:5D:66:8C:39:4C:61:32:C3:47:6B:54:56:21:2D:AB:52:35:FF: 4E:6B:1F:8F:D3:D0:E1:49:4E:C9:6B  abz3.t4m.cn-->
-	<!--  <script type="text/javascript" src="//ahuu.t4m.cn/applink.js"></script>-->
-	
-	<!--  <script type="text/javascript" src="//ak3o.t4m.cn/applink.js"></script>-->
-	
-		 
-	<!--<script type="text/javascript" src="//f.moblink.mob.com/3.0.1/moblink.js?appkey=2b69be25b7a96"></script>-->
-
-		 
-		 		<!--<script type="text/javascript" src="//abz3.t4m.cn/applink.js"></script>-->
-
-	 	<!--<script type="text/javascript" src="//ap75.t4m.cn/applink.js"></script> -->
-<!-- <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script> -->
-
-    <script> 
-function whatBrowser() {  
-    alert(navigator.userAgent);
-// document.Browser.Name.value=navigator.appName;  
-// document.Browser.Version.value=navigator.appVersion;  
-// document.Browser.Code.value=navigator.appCodeName;  
-// document.Browser.Agent.value=navigator.userAgent;  
-}  
-</script>
-<script src="https://static.jmlk.co/scripts/dist/jmlink.min.js"></script>
-<!-- <script type="text/javascript" src="http://b36t.t4m.cn/applink.js"></script> -->
-<!-- <script type="text/javascript">
-	/*
- * MobLink 支持数组=>MobLink([...]) 和对象=>MobLink({...})
- * 页面上有多个元素需要跳转时使用数组方式,仅单个元素时可以使用对象的方式进行初始化
- * el: 表示网页上Element的id值,该字段为空或者不写则表示MobLink默认浮层上的打开按钮(注意:必须为元素id,以#开头)
- * path: 对应App里的路径
- * params: 网页需要带给客户端的参数
- */
-// MobLink({
-//  el: '#btnlink',
-//  path: '/demo/a',
-//  params: {
-//      sysCode:'article',
-//      articleId: '3314392062592000',
-//      type: 'common',
-// officeType:null
-//  }
-// })
-new JMLink({
-    // jmlink:'https://aercfr.jmlk.co/AAXF',// 短链地址
-    jmlink:'https://bxmauh.jgmlink.cn/AAUr',
-    // jmlink:'https://axmauh.jmlk.co/AAUr',
-    button:document.querySelector('#btnOpenApp'),
-    plhparams:{
-        type:'image',
-        articleId:'111lllll11',
-        sysCode:'article'
-    }
-});
-</script> -->
-
-  </body>
 </html>
