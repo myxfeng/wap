@@ -1,8 +1,8 @@
-﻿/*
+/*
 * @Author: mayuxin
 * @Date:   2017-12-01 09:29:31
 * @Last Modified by:   mayuxin
-* @Last Modified time: 2021-12-07 17:32:20
+* @Last Modified time: 2021-12-07 18:10:30
 */
 
 @CHARSET "UTF-8";
@@ -156,7 +156,9 @@ body {
 }
 
 .content {
-    position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
     height: auto;
     margin: 0 auto;
     padding-left: 15px;
@@ -171,11 +173,7 @@ body {
     text-align: justify;
     text-justify: distribute;
 }
-.channel{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 0.30rem;
-    font-weight: bold;
-
+.qrcode{
+	max-width: 100%;
+	object-fit: contain;
 }

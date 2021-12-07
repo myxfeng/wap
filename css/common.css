@@ -1,0 +1,9 @@
+body {
+    background: #F6F7F7;
+    overflow-y: auto;
+    width: 100%;
+    -webkit-touch-callout: none;
+    max-width: 640px;
+    margin: auto;
+}
+

@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html, charset=utf-8" />
     <meta http-equiv="content-language" content="zh" />
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
-    <title>人民日报</title>
+    <title>枫叶驿站</title>
     <link href="css/index.css" type="text/css" rel="stylesheet" />
     <!-- <link href="css/loading.css" type="text/css" rel="stylesheet" /> -->
 </head>
@@ -15,34 +15,14 @@
 <body>
     <div class="rootcontent">
         <div id="content" class="content">
-            <div class="head" id="htmlHeader">
+            <div class="channel">
+                <a href="" class="c_home">首页</a>
+                <a href="news/index.html" class="c_news">新闻</a>
+                <a href="life/inde.html" class="c_kj">科技</a>
+                <a href="about/index.html" class="c_about">关于</a>
             </div>
-            <div class="image" id="htmlImage"></div>
-            <div class="detail" id="htmlDetail">
-            </div>
-        </div>
-        <div id="readlay">
-            <img class="playBtn" src="css/img/pic_audio_normal.png" />
-            <img class="stopBtn" src="css/img/pic_audio_stop.png" hidden="hidden" />
-        </div>
-        <div id="empty">
-        </div>
-        <div id="loading">
-                <!-- <img class="emptyImg" src="css/img/pic_detail_default.png" /> -->
-                <img id="loadingImg" src="css/img/pic_loading.gif">
         </div>
     </div>
-    <!-- 模板 header -->
-    <script id="tmpHeader" type="text/html">
-        <h2 class="sho_title">{{#introTitle}}</h2>
-        <h1 class="title">{{#title}}</h1>
-        <h2 class="sub_title">{{#subTitle}}</h2>
-        <div class="info clearfix">
-            <span class="copyfrom">{{#copyfrom}}</span>
-            <span class="authors" hidden="hidden">{{#authors}}</span>
-            <span class="time">{{newsDatetime}} </span>
-        </div>
-    </script>
     <!-- 模板图片 -->
     <script id="tmpImg" type="text/html">
         <img src="{{imgUrl}}">
